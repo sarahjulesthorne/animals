@@ -234,7 +234,7 @@ const buildDomString = (animalArray) => {
     domString += `<p class='padding'>${animal.name} is a/an ${animal.color} ${animal.type}</p>`;
     domString += `<p class='padding'>Their special skill is:</p>`;
     domString += `<ul class='unordered-list'>`;
-    domString += `<li class='padding'>${animal.specialSkill}</li>`;
+    domString += `<li class='unordered-list-item padding'>${animal.specialSkill}</li>`;
     domString += `</ul>`;
     domString += `</div>`;
   });
