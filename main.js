@@ -136,7 +136,7 @@ const pets = [{
     color: "Blue",
     specialSkill: "Listens attentively to boring stories.",
     type: "dog",
-    imageUrl: "http://cdn.akc.org/content/article-body-image/funny-pembroke_welsh_corgi.jpg"
+    imageUrl: "https://static2.shop033.com/resources/18/160536/picture/9D/85219485.jpeg"
   },
   {
     name: "Spooky",
@@ -206,7 +206,7 @@ const pets = [{
     color: "Green",
     specialSkill: "Gives hugs with appropriate pressure and for the right length of time.",
     type: "cat",
-    imageUrl: "http://kittentoob.com/wp-content/uploads/2015/06/funny-cat-with-a-towel.jpg"
+    imageUrl: "http://www.texasforthem.org/wp-content/uploads/2016/03/Feral-Cat-1.jpg"
   },
   {
     name: "Lucy",
@@ -228,13 +228,13 @@ Function also calls print function above to print the finished string to the pag
 const buildDomString = (animalArray) => {
   let domString = '';
   animalArray.forEach((animal) => {
-    domString += `<div class='card ${animal.type} padding'>`;
+    domString += `<div class='card padding ${animal.type}'>`;
     domString += `<h3 class='title padding-vertical'>${animal.name} The ${animal.type}</h3>`;
     domString += `<img class='animal-image padding-vertical' src='${animal.imageUrl}' alt='Image of ${animal.name}, the ${animal.color} ${animal.type}'/>`;
     domString += `<p class='padding'>${animal.name} is a/an ${animal.color} ${animal.type}</p>`;
     domString += `<p class='padding'>Their special skill is:</p>`;
     domString += `<ul class='unordered-list'>`;
-    domString += `<li class='padding'>${animal.specialSkill}</li>`;
+    domString += `<li class='unordered-list-item padding'>${animal.specialSkill}</li>`;
     domString += `</ul>`;
     domString += `</div>`;
   });
