@@ -7,8 +7,17 @@
 body {
     background-color: #bcada3;
     color: #6b5547;
+    font-family: 'Roboto', Arial, Sans-serif;
     display: flex;
     flex-flow: column nowrap;
+}
+
+.padding {
+    padding: 1em;
+}
+
+.padding-vertical {
+    padding: 1em 0;
 }
 
 .button-container {
@@ -18,8 +27,8 @@ body {
 }
 
 .button {
-color: white;
-font-size: 2em;
+    color: white;
+    font-size: 2em;
 }
 
 .dino-button {
@@ -47,6 +56,9 @@ font-size: 2em;
     display: flex;
     flex-flow: column nowrap;
     width: 30%;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 10px #6b5547;
 }
 
 .title {
@@ -63,10 +75,12 @@ font-size: 2em;
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
+    margin-left: 20px;
 }
 
-.unordered-list li {
+.unordered-list-item {
     width: 100%;
+
 }
 
 .dino {
