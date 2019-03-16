@@ -6,7 +6,7 @@
 
 body {
     background-color: #bcada3;
-    color: chocolate;
+    color: #6b5547;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -17,16 +17,25 @@ body {
     justify-content: space-around;
 }
 
-.button .dino {
+.button {
+color: white;
+font-size: 2em;
+}
+
+.dino-button {
     background-color: #cc5500;
 }
 
-.button .cat {
+.cat-button {
     background-color: #007fff;
 }
 
-.button .dog {
+.dog-button {
     background-color: #2d572c;
+}
+
+.all-button {
+    background-color: #6b5547;
 }
 
 .card-container {
@@ -50,17 +59,27 @@ body {
     height: 300px;
 }
 
-.card .dino {
+.unordered-list {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.unordered-list li {
+    width: 100%;
+}
+
+.dino {
     background-color: #edb059;
     border: 3px solid #cc5500;
 }
 
-.card .cat {
+.cat {
     background-color: lightblue;
     border: 3px solid #007fff;
 }
 
-.card .dog {
+.dog {
     background-color: lightgreen;
     border: 3px solid #2d572c;
 }
